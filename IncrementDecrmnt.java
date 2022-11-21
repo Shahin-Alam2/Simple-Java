@@ -1,26 +1,32 @@
+
+package Practice;
+
 import java.util.Scanner;
 
 public class IncrementDecrmnt {
-    public static void main(String args[]){
-        Scanner input=new Scanner(System.in);
-        int a,b;
-        System.out.println("Enter number:");
-        a=input.nextInt();
-        b=a++;
-        System.out.println("Postfix I "+b);
-        b=a;
-        System.out.println("now "+b);
-        b=a--;
-        System.out.println("Postfix D "+b);
-        b=a;
-        System.out.println("now "+b);
-        b=--a;
-        System.out.println("Prefix D "+b);
-        b=a;
-        System.out.println("now "+b);
-        b=++a;
-        System.out.println("Prefix I "+b);
-        b=a;
-        System.out.println("now "+b);
-    }
+public static void main(String args[]){
+    
+    Scanner input=new Scanner(System.in);
+    int a,b;
+    
+    System.out.print("Enter a number:");
+    a=input.nextInt();
+    System.out.println("a="+a);
+    //Increment
+    System.out.println("Increment");
+    b=a++;
+    System.out.println("b=a++ ,  b="+b);
+    System.out.println("a="+a);
+    b=++a;
+    System.out.println("b=++a ,  b="+b);
+    System.out.println("a="+a);
+    //Decrement
+    System.out.println("Decrement");
+    b=a--;
+    System.out.println("b=a-- ,  b="+b);
+    System.out.println("a="+a);
+    b=--a;
+    System.out.println("b=--a ,  b="+b);
+    System.out.println("a="+a);
+    }    
 }
